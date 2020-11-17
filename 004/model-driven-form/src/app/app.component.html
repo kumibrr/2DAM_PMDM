@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="inner-container">
+    <h3>Selecciona una categoría de broma:</h3>
+    <form [formGroup]="this.chuckFg">
+      <select formControlName="category" (change)="categorySelected($event)">
+        <option *ngFor="let category of jokeCategories" [value]="category">{{category}}</option>
+      </select>
+    </form>
+    <app-joke *ngIf="joke" [joke]="joke"></app-joke>
+    <button *ngIf="joke" (click)="getJoke()">🔄 Otra broma</button>
+  </div>
+</div>
