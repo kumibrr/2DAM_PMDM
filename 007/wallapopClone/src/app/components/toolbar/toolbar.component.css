@@ -1,0 +1,14 @@
+mat-toolbar {
+    max-height: 56px;
+    padding: 0 16px;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
